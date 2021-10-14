@@ -38,7 +38,7 @@
                img.classList.add('img-content');
                const mainImg = document.createElement('img');
                mainImg.src = photo.urls.small;
-               mainImg.alt = photo.alt_description;
+               mainImg.alt = photo.alt_description? photo.alt_description : `Image`;
                mainImg.title = photo.alt_description ? photo.alt_description : photo.description ? photo.description : '';
            const about = document.createElement('div');
           about.classList.add('about');
